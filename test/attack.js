@@ -26,7 +26,7 @@ describe("Attack", function () {
     );
 
     // We are able to extract the values of the private variables
-    // expect(ethers.utils.parseBytes32String(slot0Bytes)).to.equal("Test");
-    // expect(ethers.utils.parseBytes32String(slot1Bytes)).to.equal("password");
+    expect(ethers.utils.parseBytes32String(slot0Bytes)).to.equal("Test");
+    expect(ethers.utils.parseBytes32String(slot1Bytes)).to.equal("password");
   });
 });
